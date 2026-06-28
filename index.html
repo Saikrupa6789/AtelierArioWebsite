@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier Ario — Design Engineered for Excellence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" data-nav>
+        <div class="logo-mark">
+          <img src="Logo.jpg" alt="Atelier Ario Logo" height="70" />
+        </div>
+        <span class="logo-text">Atelier Ario</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link" data-nav>About</a>
+        <a href="#services" class="nav-link" data-nav>Services</a>
+        <a href="#process" class="nav-link" data-nav>Process</a>
+        <a href="#portfolio" class="nav-link" data-nav>Work</a>
+        <a href="#contact" class="nav-cta" data-nav>Start a Project</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="#about" class="mobile-link" data-mobile-nav>About</a>
+      <a href="#services" class="mobile-link" data-mobile-nav>Services</a>
+      <a href="#process" class="mobile-link" data-mobile-nav>Process</a>
+      <a href="#portfolio" class="mobile-link" data-mobile-nav>Work</a>
+      <a href="#contact" class="mobile-link mobile-cta" data-mobile-nav>Start a Project</a>
+    </div>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        <span>Brand Design Studio</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-headline">
+        <span class="hero-word" data-text="We">We</span>
+        <span class="hero-word accent-word" data-text="Design">Design</span>
+        <br />
+        <span class="hero-word" data-text="Brands">Brands</span>
+        <span class="hero-word" data-text="That">That</span>
+        <br />
+        <span class="hero-word italic-word" data-text="Dominate.">Dominate.</span>
+      </h1>
+      <p class="hero-sub">
+        Atelier Ario crafts elite brand identities and digital experiences
+        for startups ready to build audience, authority, and profit.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn-primary" data-nav>View Our Work</a>
+        <a href="#contact" class="btn-ghost" data-nav>
+          <span>Let's Talk</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-row">
+            <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>
+          </div>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-row">
+            <span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span>
+          </div>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-row">
+            <span class="stat-num" data-count="6">0</span>
+          </div>
+          <span class="stat-label">Services Offered</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span>Brand Identity</span><span class="marquee-dot">●</span>
+        <span>Logo Design</span><span class="marquee-dot">●</span>
+        <span>UI/UX Design</span><span class="marquee-dot">●</span>
+        <span>MVP Prototypes</span><span class="marquee-dot">●</span>
+        <span>Startup Strategy</span><span class="marquee-dot">●</span>
+        <span>Digital Growth</span><span class="marquee-dot">●</span>
+        <span>Brand Identity</span><span class="marquee-dot">●</span>
+        <span>Logo Design</span><span class="marquee-dot">●</span>
+        <span>UI/UX Design</span><span class="marquee-dot">●</span>
+        <span>MVP Prototypes</span><span class="marquee-dot">●</span>
+        <span>Startup Strategy</span><span class="marquee-dot">●</span>
+        <span>Digital Growth</span><span class="marquee-dot">●</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal-left">
+          <div class="section-eyebrow">About Us</div>
+          <h2 class="section-title">
+            We Don't Just Design.
+            <em>We Engineer</em>
+            Brand Authority.
+          </h2>
+          <p class="about-body">
+            Atelier Ario is a multidisciplinary design studio dedicated to bridging the gap between
+            artisan-level craftsmanship and modern, high-performance digital presence.
+          </p>
+          <p class="about-body">
+            We equip emerging enterprises and small businesses with the elite strategy, design, and
+            product engineering required to establish authority, optimize conversions, and scale sustainably.
+            No jargon. No bloat. Just results.
+          </p>
+          <a href="#contact" class="btn-primary" data-nav>Work With Us</a>
+        </div>
+        <div class="about-right reveal-right">
+          <div class="about-card-stack">
+            <div class="about-card about-card-1">
+              <div class="about-card-icon">✦</div>
+              <h3>Craft-First</h3>
+              <p>Every pixel is intentional. Every decision rooted in strategy.</p>
+            </div>
+            <div class="about-card about-card-2">
+              <div class="about-card-icon">◈</div>
+              <h3>Startup-Focused</h3>
+              <p>Built for businesses that need to punch above their weight class.</p>
+            </div>
+            <div class="about-card about-card-3">
+              <div class="about-card-icon">⬡</div>
+              <h3>Zero Vendor Lock</h3>
+              <p>All files, all formats, all yours — forever.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─── -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-eyebrow">What We Do</div>
+        <h2 class="section-title">Services Built to<br /><em>Launch & Scale</em></h2>
+        <p class="section-sub">Flat-rate packages. Zero technical jargon. Complete transparency.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/><path d="M24 8V4M24 44v-4M8 24H4M44 24h-4M12.7 12.7l-2.8-2.8M38.1 38.1l-2.8-2.8M12.7 35.3l-2.8 2.8M38.1 9.9l-2.8 2.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Logo Design Bundle</h3>
+          <p>Primary logo, submark, monogram, B&W versions, all vector formats, and real-world mockups.</p>
+          <div class="service-includes">
+            <span>Primary Logo</span>
+            <span>SVG + PNG + PDF</span>
+            <span>3 Revisions</span>
+            <span>5–7 Days</span>
+          </div>
+          <div class="service-price">₹10,000</div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="100">
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 10v28M32 10v28M6 22h36M6 30h36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Brand Identity System</h3>
+          <p>Color palettes, typography systems, brand guidelines, tone direction, and social media visual direction.</p>
+          <div class="service-includes">
+            <span>Brand Guidelines</span>
+            <span>Slogan</span>
+            <span>2 Revisions</span>
+            <span>7–10 Days</span>
+          </div>
+          <div class="service-price">₹15,000</div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="200">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="3" stroke="currentColor" stroke-width="2"/><path d="M8 18h32M18 18v22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Creative Collateral Assets</h3>
+          <p>Print-ready packaging dielines, premium business card layouts, and high-fidelity 3D product mockups.</p>
+          <div class="service-includes">
+            <span>Package Design</span>
+            <span>Card Design</span>
+            <span>3D Mockups</span>
+          </div>
+          <div class="service-price">₹10,000</div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="service-number">04</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="26" height="20" rx="2" stroke="currentColor" stroke-width="2"/><rect x="18" y="20" width="26" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M12 28v6M36 12v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Simple UI Page Layouts</h3>
+          <p>Up to 5 high-fidelity screen designs, interactive Figma prototype, mobile/desktop responsive layouts.</p>
+          <div class="service-includes">
+            <span>5 Screens</span>
+            <span>Figma Delivery</span>
+            <span>3 Revisions</span>
+            <span>1–2 Weeks</span>
+          </div>
+          <div class="service-price">₹20,000</div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="100">
+          <div class="service-number">05</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="4" stroke="currentColor" stroke-width="2"/><path d="M16 24l6 6 10-12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Interactive MVP Design</h3>
+          <p>Full UI/UX strategy, high-fidelity designs, user flow planning, clickable Figma prototypes, and developer-ready files.</p>
+          <div class="service-includes">
+            <span>UX Strategy</span>
+            <span>Design System</span>
+            <span>4 Revisions</span>
+            <span>2–4 Weeks</span>
+          </div>
+          <div class="service-price">₹35,000</div>
+        </div>
+
+        <div class="service-card service-card-highlight reveal-up" data-delay="200">
+          <div class="service-number">06</div>
+          <div class="service-badge">Best Value</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l4.9 14.6H44l-12.4 8.9 4.7 14.6L24 33.1l-12.3 9 4.7-14.6L4 18.6h15.1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Startup Launch Suite</h3>
+          <p>The complete end-to-end launch pipeline: Market research, brand narrative, logo, identity, collateral, UI pages, and MVP prototype.</p>
+          <div class="service-includes">
+            <span>Everything</span>
+            <span>4–6 Weeks</span>
+            <span>Full Strategy</span>
+            <span>Best Value</span>
+          </div>
+          <div class="service-price">₹65,000</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROCESS ─── -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-eyebrow">How We Work</div>
+        <h2 class="section-title">The Four-Stage<br /><em>Iterative Loop</em></h2>
+      </div>
+      <div class="process-track">
+        <div class="process-line">
+          <div class="process-line-fill" id="process-line-fill"></div>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal-up" data-delay="0">
+            <div class="process-step-num">01</div>
+            <div class="process-step-content">
+              <h3>Diagnostic Alignment</h3>
+              <p>Deep discovery sessions to confirm friction points, audience dynamics, and market positioning — zero surface-level guesswork.</p>
+            </div>
+          </div>
+          <div class="process-step reveal-up" data-delay="150">
+            <div class="process-step-num">02</div>
+            <div class="process-step-content">
+              <h3>Structural Blueprints</h3>
+              <p>Wireframes, system logic, and narrative foundations built and reviewed to ensure complete strategic alignment before execution.</p>
+            </div>
+          </div>
+          <div class="process-step reveal-up" data-delay="300">
+            <div class="process-step-num">03</div>
+            <div class="process-step-content">
+              <h3>High-Fidelity Refinements</h3>
+              <p>Elite aesthetic detailing, design tokens, and identity systems applied over your approved structural foundation.</p>
+            </div>
+          </div>
+          <div class="process-step reveal-up" data-delay="450">
+            <div class="process-step-num">04</div>
+            <div class="process-step-content">
+              <h3>Deployment & Hand-Off</h3>
+              <p>Fully organized asset folders, active repositories, and developer documentation — with zero vendor lock-in. Everything is yours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PORTFOLIO ─── -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-eyebrow">Selected Work</div>
+        <h2 class="section-title">Projects That<br /><em>Make Impact</em></h2>
+        <p class="section-sub">Hover to preview. Click to explore.</p>
+      </div>
+      <div class="portfolio-list">
+
+        <div class="portfolio-item reveal-up" data-delay="0" data-project="moms-bake">
+          <div class="portfolio-item-left">
+            <span class="portfolio-index">01</span>
+            <div>
+              <h3 class="portfolio-title">The Cinnamon Bean Brand</h3>
+              <p class="portfolio-meta">Brand Identity · Logo Design</p>
+            </div>
+          </div>
+          <div class="portfolio-item-right">
+            <div class="portfolio-tags">
+              <span>Logo</span>
+              <span>Brand Identity</span>
+            </div>
+            <svg class="portfolio-arrow" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="portfolio-hover-card">
+            <div class="hover-card-img moms-bake-preview"></div>
+            <div class="hover-card-info">
+              <span>The cinnamon Bean Brand</span>
+              <small>Brand Identity & Logo</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal-up" data-delay="100" data-project="cake-ale">
+          <div class="portfolio-item-left">
+            <span class="portfolio-index">02</span>
+            <div>
+              <h3 class="portfolio-title">VOIDCRTL</h3>
+              <p class="portfolio-meta">UI Design · Web Design</p>
+            </div>
+          </div>
+          <div class="portfolio-item-right">
+            <div class="portfolio-tags">
+              <span>UI Design</span>
+              <span>Web</span>
+            </div>
+            <svg class="portfolio-arrow" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="portfolio-hover-card">
+            <div class="hover-card-img cake-ale-preview"></div>
+            <div class="hover-card-info">
+              <span>VOIDCRTL</span>
+              <small>UI · Web Design</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal-up" data-delay="200" data-project="atelier-brand">
+          <div class="portfolio-item-left">
+            <span class="portfolio-index">03</span>
+            <div>
+              <h3 class="portfolio-title">Naturo Skincare</h3>
+              <p class="portfolio-meta">Brand System · Visual Identity</p>
+            </div>
+          </div>
+          <div class="portfolio-item-right">
+            <div class="portfolio-tags">
+              <span>Brand System</span>
+              <span>Identity</span>
+            </div>
+            <svg class="portfolio-arrow" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="portfolio-hover-card">
+            <div class="hover-card-img atelier-preview"></div>
+            <div class="hover-card-info">
+              <span>Naturo Skincare</span>
+              <small>Brand System</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECT MODAL ─── -->
+  <div class="project-modal" id="project-modal">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content" id="modal-content">
+      <button class="modal-close" id="modal-close">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal-left">
+          <div class="section-eyebrow">Get In Touch</div>
+          <h2 class="section-title">Ready to Build<br /><em>Something Great?</em></h2>
+          <p class="contact-body">
+            Tell us about your project. We'll respond within 24 hours with a tailored scope and timeline.
+          </p>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 8l9 6 9-6M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8M3 8a2 2 0 012-2h14a2 2 0 012 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span>atelierariostudio@gmail.com</span>
+            </div>
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M17 2h-4a1 1 0 00-1 1v18a1 1 0 001 1h4a1 1 0 001-1V3a1 1 0 00-1-1zM12 17h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span>Available Worldwide</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right reveal-right">
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xdarzdjr"
+  method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jane@startup.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="logo">Logo Design Bundle — ₹15,000</option>
+                <option value="brand">Brand Identity System — ₹10,000</option>
+                <option value="collateral">Creative Collateral Assets — ₹10,000</option>
+                <option value="ui">Simple UI Page Layouts — ₹15,000</option>
+                <option value="mvp">Interactive MVP Design — ₹35,000</option>
+                <option value="startup">Startup Launch Suite — ₹65,000</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea id="message" name="message" rows="4" placeholder="What are you building? Who's your audience? What's the vibe?"></textarea>
+            </div>
+            <button type="submit" class="btn-send">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="form-success" id="form-success">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Message sent! We'll be in touch within 24 hours.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo-mark">
+              <img src="Footer.jpg" alt="Atelier Ario Logo" height="60" />
+            </div>
+            <p>Design Engineered<br />for Excellence.</p>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Studio</h4>
+            <a href="#about" data-nav>About</a>
+            <a href="#process" data-nav>Process</a>
+            <a href="#portfolio" data-nav>Work</a>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Services</h4>
+            <a href="#services" data-nav>Logo Design</a>
+            <a href="#services" data-nav>Brand Identity</a>
+            <a href="#services" data-nav>UI Design</a>
+            <a href="#services" data-nav>MVP Prototype</a>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Connect</h4>
+            <a href="#contact" data-nav>Start a Project</a>
+            <a href="mailto:atelierariostudio@gmail.com" target="_blank">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wordmark">
+      <div class="footer-wordmark-inner">
+        <span class="wordmark-word">ATELIER</span>
+        <span class="wordmark-spacer">&nbsp;&nbsp;&nbsp;</span>
+        <span class="wordmark-word">ARIO</span>
+        <span class="wordmark-spacer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="wordmark-word">ATELIER</span>
+        <span class="wordmark-spacer">&nbsp;&nbsp;&nbsp;</span>
+        <span class="wordmark-word">ARIO</span>
+        <span class="wordmark-spacer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="wordmark-word">ATELIER</span>
+        <span class="wordmark-spacer">&nbsp;&nbsp;&nbsp;</span>
+        <span class="wordmark-word">ARIO</span>
+        <span class="wordmark-spacer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Atelier Ario. All rights reserved.</p>
+        <p>Design Engineered for Excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
